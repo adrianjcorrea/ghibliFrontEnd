@@ -1,42 +1,35 @@
-import React, { Component } from 'react';
+  import React, { Component } from 'react';
 
-class App extends Component {
-  constructor(){
-    super();
-     this.state = {
-       data: []
-     }
+  class App extends Component {
+    constructor(){
+      super();
+       this.state = {
+         films: []
+       }
+    }
+
+    //Mounts all films.
+    componentDidMount(){
+      fetch("https://ghibliapi.herokuapp.com/films")
+      .then(response => response.json())
+      .then(response => { this.setState({films: response})});
+    }
+
+    render() {
+      const { films } = this.state
+      const filteredFilms = films.filter(film => {
+        return film.title
+      })
+      return !films.length ?
+      <h1>Loading</h1> :
+
+      (
+         <div >
+           <h1>Ghibli Films</h1>
+             <h2>{JSON.stringify({filteredFilms})} </h2>
+         </div>
+       );
+   }
   }
 
-  componentDidMount(){
-    this.getMovies();
-  }
-
-  getMovies(){
-    fetch("https://ghibliapi.herokuapp.com/films", {
-      method: 'get',
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-    .then(response => response.json())
-    .then(response => { this.setState({data: response})});
-  }
-
-  allFilms(){
-
-  }
-
-  render() {
-    console.log(this.state.data)
-    return (
-      <div>
-        <header>
-         <h1></h1>
-        </header>
-      </div>
-    );
-  }
-}
-
-export default App;
+  export default App;
