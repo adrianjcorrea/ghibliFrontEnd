@@ -1,5 +1,6 @@
   import React, { Component } from 'react';
-  import FilmsList from './components/FilmsList';
+  import FilmsList from './components/FilmsList.jsx';
+  import SearchBox from './components/SearchBox.jsx';
 
   class App extends Component {
     constructor(){
@@ -27,6 +28,7 @@
       (
          <div className='tc'>
            <h1>Ghibli Films</h1>
+             <SearchBox />
              <FilmsList films={filteredFilms} />
          </div>
        );
