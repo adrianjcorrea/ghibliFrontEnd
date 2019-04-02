@@ -1,5 +1,5 @@
   import React, { Component } from 'react';
-  import FilmsList from './components/FilmsList'
+  import FilmsList from './components/FilmsList';
 
   class App extends Component {
     constructor(){
@@ -20,13 +20,12 @@
       const { films } = this.state
       const filteredFilms = films.filter(film => {
         return film.title
-        console.log(film.title)
       })
       return !films.length ?
-      <h1>Loading</h1> :
+      <h1 className='tc'>Loading</h1> :
 
       (
-         <div >
+         <div className='tc'>
            <h1>Ghibli Films</h1>
              <FilmsList films={filteredFilms} />
          </div>
