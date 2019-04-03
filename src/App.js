@@ -24,22 +24,24 @@
     onSearchChange = (event) => {
       this.setState({searchfield: event.target.value})
     }
+
     render() {
       //Destructuring to use state.
       const { films } = this.state;
+      //const imageid = ImageLink.filter
       const filteredFilms = films.filter(film => {
         //Will search by title name.
-        console.log(film.title);
+        console.log(films);
         return film.title.toLowerCase().includes(this.state.searchfield.toLowerCase());
       })
       //While films load will display Loading.
       //When films are captured in state then will display app compontets.
       return !films.length ?
-      <h1 className='tc'>Loading</h1> :
+      <h1 className='loading'>LOadING...</h1> :
 
       (
          <div className='tc'>
-           <h1>Ghibli Films</h1>
+           <h1 className='loading'>Ghibli Films</h1>
              <SearchBox searchChange={this.onSearchChange} />
              <FilmsList films={filteredFilms} />
          </div>
