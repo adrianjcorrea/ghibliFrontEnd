@@ -21,11 +21,15 @@
       .then(response => { this.setState({films: response})});
     }
 
+    onSearchChange = (event) => {
+      this.setState({searchfield: event.target.value})
+    }
     render() {
       //Destructuring to use state.
       const { films } = this.state;
       const filteredFilms = films.filter(film => {
         //Will search by title name.
+        console.log(film.title);
         return film.title.toLowerCase().includes(this.state.searchfield.toLowerCase());
       })
       //While films load will display Loading.
@@ -36,7 +40,7 @@
       (
          <div className='tc'>
            <h1>Ghibli Films</h1>
-             <SearchBox />
+             <SearchBox searchChange={this.onSearchChange} />
              <FilmsList films={filteredFilms} />
          </div>
        );
