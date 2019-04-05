@@ -2,7 +2,7 @@
   import FilmsList from './components/FilmsList.jsx';
   import SearchBox from './components/SearchBox.jsx';
   import Scroll from './components/Scroll.jsx';
-
+  import './css/App.css'
 
   class App extends Component {
     constructor(){
@@ -11,6 +11,7 @@
          //Saving api response obj in films array.
          films: [],
          searchfield: ''
+
        }
     }
 
@@ -33,9 +34,9 @@
       //const imageid = ImageLink.filter
       const filteredFilms = films.filter(film => {
         //Will search by title name.
-        console.log(films);
         return film.title.toLowerCase().includes(this.state.searchfield.toLowerCase());
       })
+
       //While films load will display Loading.
       //When films are captured in state then will display app compontets.
       return !films.length ?
@@ -43,9 +44,9 @@
 
       (
          <div className='tc'>
-           <h1 className='loading'>Ghibli Films</h1>
+           <h1 className='pageTitle'>Ghibli Films</h1>
              <SearchBox searchChange={this.onSearchChange} />
-             <Scroll>
+             <Scroll >
                <FilmsList films={filteredFilms} />
              </Scroll>
          </div>
