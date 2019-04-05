@@ -1,56 +1,57 @@
 import React from 'react';
-import coverImage from './ImageLink.jsx';
+import coverImage from './ImageLink.js';
 
 
 const Card = ({title, description, director, producer, release_date, rt_score }) => {
+
+  const coverUrl= function() {
+    if(title === 'Castle in the Sky'){
+  return( <img src={coverImage[0]} style={{width: '10%', height: '10%'}} />);
+  }else if(title === 'Grave of the Fireflies'){
+    return (<img src={coverImage[1]} style={{width: '10%', height: '10%'}} />);
+  }else if(title === 'My Neighbor Totoro'){
+    return (<img src={coverImage[2]} style={{width: '10%', height: '10%'}} />);
+  }else if(title === 'Kiki\'s Delivery Service'){
+    return (<img src={coverImage[3]} style={{width: '10%', height: '10%'}} />);
+  }else if(title === 'Only Yesterday'){
+    return (<img src={coverImage[4]} style={{width: '10%', height: '10%'}} />);
+  }else if(title === 'Porco Rosso'){
+    return (<img src={coverImage[5]} style={{width: '10%', height: '10%'}} />);
+  }else if(title === 'Pom Poko'){
+    return (<img src={coverImage[6]} style={{width: '10%', height: '10%'}} />);
+  }else if(title === 'Whisper of the Heart'){
+    return (<img src={coverImage[7]} style={{width: '10%', height: '10%'}} />);
+  }else if(title === 'Princess Mononoke'){
+    return (<img src={coverImage[8]} style={{width: '10%', height: '10%'}} />);
+  }else if(title === 'My Neighbors the Yamadas'){
+    return (<img src={coverImage[9]} style={{width: '10%', height: '10%'}} />);
+  }else if(title === 'Spirited Away'){
+    return (<img src={coverImage[10]} style={{width: '10%', height: '10%'}} />);
+  }else if(title === 'The Cat Returns'){
+    return (<img src={coverImage[11]} style={{width: '10%', height: '10%'}} />);
+  }else if(title === 'Howl\'s Moving Castle'){
+    return (<img src={coverImage[12]} style={{width: '10%', height: '10%'}} />);
+  }else if(title === 'Tales from Earthsea'){
+    return (<img src={coverImage[13]} style={{width: '10%', height: '10%'}} />);
+  }else if(title === 'Ponyo'){
+    return (<img src={coverImage[14]} style={{width: '10%', height: '10%'}} />);
+  }else if(title === 'Arrietty'){
+    return (<img src={coverImage[15]} style={{width: '10%', height: '10%'}} />);
+  }else if(title === 'From Up on Poppy Hill'){
+    return (<img src={coverImage[16]} style={{width: '10%', height: '10%'}} />);
+  }else if(title === 'The Wind Rises'){
+    return (<img src={coverImage[17]} style={{width: '10%', height: '10%'}} />);
+  }else if(title === 'The Tale of the Princess Kaguya'){
+    return (<img src={coverImage[18]} style={{width: '10%', height: '10%'}} />);
+  }else{
+    return (<img src={coverImage[19]} style={{width: '10%', height: '10%'}} />);
+   }
+  }
+
   return (
     <div className=' bg-blue dib br5 pa3 ma2 grow bw2 shadow-5 o-90 ba bw3 b--light-green pointer'
     style={{width: '60%', height: '20%'}}>
-    {title === 'Castle in the Sky' ?
-      <img src={coverImage[0].a} style={{width: '10%', height: '10%'}} />
-      :(title === 'Grave of the Fireflies') ?
-      <img src={coverImage[1].a} style={{width: '10%', height: '10%'}} />
-      :(title === 'My Neighbor Totoro') ?
-      <img src={coverImage[2].a}  style={{width: '10%', height: '10%'}} />
-      :(title === 'Kiki\'s Delivery Service') ?
-      <img src={coverImage[3].a}  style={{width: '10%', height: '10%'}} />
-      :(title === 'Only Yesterday') ?
-      <img src={coverImage[4].a}  style={{width: '10%', height: '10%'}} />
-      :(title === 'Porco Rosso') ?
-      <img src={coverImage[5].a}  style={{width: '10%', height: '10%'}} />
-      :(title === 'Pom Poko') ?
-      <img src={coverImage[6].a}  style={{width: '10%', height: '10%'}} />
-      :(title === 'Whisper of the Heart') ?
-      <img src={coverImage[7].a}  style={{width: '10%', height: '10%'}} />
-      :(title === 'Princess Mononoke') ?
-      <img src={coverImage[8].a}  style={{width: '10%', height: '10%'}} />
-      :(title === 'My Neighbors the Yamadas') ?
-      <img src={coverImage[9].a}  style={{width: '10%', height: '10%'}} />
-      :(title === 'Spirited Away') ?
-      <img src={coverImage[10].a}  style={{width: '10%', height: '10%'}} />
-      :(title === 'The Cat Returns') ?
-      <img src={coverImage[11].a}  style={{width: '10%', height: '10%'}} />
-      :(title === 'Howl\'s Moving Castle') ?
-      <img src={coverImage[12].a}  style={{width: '10%', height: '10%'}} />
-      :(title === 'Tales from Earthsea') ?
-      <img src={coverImage[13].a}  style={{width: '10%', height: '10%'}} />
-      :(title === 'Ponyo') ?
-      <img src={coverImage[14].a}  style={{width: '10%', height: '10%'}} />
-      :(title === 'Arrietty') ?
-      <img src={coverImage[15].a}  style={{width: '10%', height: '10%'}} />
-      :(title === 'From Up on Poppy Hill') ?
-      <img src={coverImage[16].a}  style={{width: '10%', height: '10%'}} />
-      :(title === 'The Wind Rises') ?
-      <img src={coverImage[17].a}  style={{width: '10%', height: '10%'}} />
-      :(title === 'The Tale of the Princess Kaguya') ?
-      <img src={coverImage[18].a}  style={{width: '10%', height: '10%'}} />
-      :(title === 'When Marnie Was There') ?
-      <img src={coverImage[19].a}  style={{width: '10%', height: '10%'}} />
-      :
-      <img src={coverImage[19].a}  style={{width: '10%', height: '10%'}} />
-
-
-    }
+    {coverUrl()}
       <div>
         <h2>{title}</h2>
         <p>{description}</p>
