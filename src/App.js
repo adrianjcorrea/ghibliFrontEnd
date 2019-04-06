@@ -4,9 +4,15 @@
 
     render() {
     return (
-       <div className='image'>
-         <h2> Totoro, a character from My Neighbor Totoro, is the studios mascot.</h2>
-       </div>
+      <div>
+      <main class="grid" id="main">
+        <section id="section-a" class="grid">
+          <h1 className="pageTitle">Welcome to Ghibli</h1>
+          <div class="image"></div>
+          <div id="img-caption"> Totoro, a character from My Neighbor Totoro, is the studios mascot.</div>
+        </section>
+      </main>
+      </div>
     );
    }
   }
