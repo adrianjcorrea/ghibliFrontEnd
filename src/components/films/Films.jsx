@@ -1,7 +1,7 @@
 import React from 'react';
 import FilmsList from './FilmsList.jsx';
-import SearchBox from './SearchBox.jsx';
-import Scroll from './Scroll.jsx';
+import SearchBox from '../utilities/SearchBox.jsx';
+import Scroll from '../utilities/Scroll.jsx';
 
 class Films extends React.Component{
   constructor(){

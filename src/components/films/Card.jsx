@@ -1,5 +1,5 @@
 import React from 'react';
-import coverImage from './ImageLink.js';
+import coverImage from '../utilities/ImageLink.js';
 
 
 class Card extends React.Component{
