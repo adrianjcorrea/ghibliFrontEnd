@@ -10,9 +10,15 @@ class Card extends React.Component{
      }
   }
 
-   cardChange = () => {
-    this.setState({isClicked: true})
-    console.log(this.state.isClicked)
+   cardOnChange = () => {
+     const click = this.state.isClicked;
+     if(click === false){
+       this.setState({isClicked: true})
+       console.log(this.state.isClicked)
+     }else{
+       this.setState({isClicked: false})
+       console.log(this.state.isClicked)
+     }
 
   }
 
@@ -22,7 +28,7 @@ class Card extends React.Component{
 
   return (
 
-    <div  onClick={this.cardChange} className=' bg-blue dib br5 pa3 ma2 grow bw2 shadow-5 o-90 ba bw3 b--light-green pointer'
+    <div  onClick={this.cardOnChange} className=' bg-blue dib br5 pa3 ma2 grow bw2 shadow-5 o-90 ba bw3 b--light-green pointer'
     style={{width: '60%', height: '20%'}}>
     {title === 'Castle in the Sky' ?
       <img src={coverImage[0]} alt="Film Cover"style={{width: '10%', height: '10%'}} />
