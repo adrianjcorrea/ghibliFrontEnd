@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import App from'../App.js';
-import Films from'./Films.jsx';
-import Error from'./Error.jsx';
+import App from'../../App.js';
+import Films from'../Films.jsx';
+import Error from'../Error.jsx';
 import NavBar from './NavBar.jsx'
 
 class Routes extends Component {
