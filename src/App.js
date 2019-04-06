@@ -61,7 +61,7 @@
           </section>
           <section id="section-d" className="grid">
             <div className='content'>
-              <h3 className='video-title'>Studio Ghiblis top 10 movies</h3>
+              <h3 className='tc bg-white'>Studio Ghiblis top 10 movies</h3>
               <div className="iframe-cont">
                 <iframe src="https://www.youtube.com/embed/xJWLxxD0Hp8" frameborder="0" allow="autoplay; encrypted-media"
                   allowfullscreen></iframe>
