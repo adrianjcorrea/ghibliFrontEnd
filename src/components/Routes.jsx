@@ -4,14 +4,14 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import App from'../App.js';
 import Films from'./Films.jsx';
 import Error from'./Error.jsx';
-import Navigation from './Navigation.jsx'
+import NavBar from './NavBar.jsx'
 
 class Routes extends Component {
 render() {
     return(
      <BrowserRouter>
      <div>
-       <Navigation />
+       <NavBar />
        <Switch>
          <Route path="/" component={App} exact />
          <Route path="/Films" component={Films} />
