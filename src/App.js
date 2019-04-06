@@ -1,4 +1,5 @@
   import React, { Component } from 'react';
+  import {NavLink} from 'react-router-dom';
 
   class App extends Component {
 
@@ -24,6 +25,41 @@
             </span>
           </div>
       </section>
+      <section id="section-c" class="grid">
+        <ul>
+          <li>
+            <div class="card">
+              <div class="card-content">
+                <h3 class="card-title">History</h3>
+                <div class="card-imgwrap"></div>
+                <p>Studio Ghibli was founded in 1985 in Tokyo by the three men, Isao Takahata, Toshio Suzuki and the well-known film producer Hayao Miyazaki. The name Studio Ghibli was based on the Arabic name for "hot sahara wind" because the founders wanted Studio Ghibli to blow new wind through the anime industry.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card">
+              <div class="card-content">
+                <h3 class="card-title">Movies</h3>
+                <div class="card-imgwrap"></div>
+                <p>Go to Movies Listed </p>
+                <NavLink to="Films">Films</NavLink>
+              </div>
+            </div>
+
+          </li>
+          <li>
+            <div class="card">
+              <div class="card-content">
+                <h3 class="card-title">Museum</h3>
+                <div class="card-imgwrap"></div>
+                <a href="http://www.ghibli-museum.jp/en/info" target="_blank">Ghibli Studios website.</a>
+                <p></p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
       </main>
       </div>
     );

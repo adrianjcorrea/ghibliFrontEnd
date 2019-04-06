@@ -61,5 +61,64 @@ body {
 }
 
 #section-b{
-  background-color:rgb(55, 125, 118);
+  background-color: rgb(26, 28, 3);
+}
+
+
+#section-c .card-imgwrap {
+  width: 100%;
+  height: auto;
+  padding-top: 66.6%;
+  background: url('http://www.massey.ac.nz/massey/fms/Massey%20News/2015/8/images/kingdom-of-dreams-and-madness.jpg');
+  background-size: contain;
+}
+
+#section-c li:nth-child(2) .card-imgwrap {
+  background: url('http://www.konbini.com/wp-content/blogs.dir/4/files/2016/06/gibli-mashup-810x455.jpg');
+  /* height: 100%;
+  width: auto; */
+  background-size: contain;
+}
+
+#section-c li:nth-child(3) .card-imgwrap {
+  background: url('https://img-en.kikou.io/media/6/7276/size640_8NyCFn7np7o1B_vmhBVUww.jpg');
+  background-size: contain;
+}
+
+
+.section-c {
+  margin-bottom: 1em;
+  background: #fff;
+  color: #333;
+ }
+
+ #section-c ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#section-c li {
+  margin: 0;
+  padding-bottom: 1em;
+  background: #fff;
+  color: #333;
+}
+
+#section-c h3 {
+  text-transform: uppercase;
+  padding-top: 2em;
+}
+
+#main {
+  grid-area:c;
+}
+
+#section-c ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+#section-c li {
+  width: 30%;
 }
