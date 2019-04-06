@@ -139,3 +139,10 @@ iframe {
   margin: 0 auto;
   margin-bottom:2em;
 }
+
+#main-footer {
+  padding: 1.5em;
+  background: #fff;
+  color:black;
+  text-align: center;
+}

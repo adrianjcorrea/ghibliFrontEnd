@@ -69,6 +69,9 @@
             </div>
           </section>
         </main>
+        <footer id="main-footer">
+   <p>Copyright © 2018 Ghiblis Fan</p>
+ </footer>
       </div>
     );
    }
