@@ -10,7 +10,7 @@ render() {
      <BrowserRouter>
        <div>
          <Route path="/" component={App} />
-         <Route path="/Movies" component={Films} />
+         <Route path="/Films" component={Films} />
        </div>
      </BrowserRouter>
      );
