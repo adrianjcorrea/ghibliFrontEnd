@@ -45,3 +45,17 @@ body {
   font-size: 1.75em;
 
 }
+
+#tribute-info {
+  padding: 1em;
+  color: white;
+}
+
+.sitelink a {
+  color: white;
+}
+
+.sitelink a:hover {
+  padding-bottom: 0.5em;
+  border-bottom:1px solid lightseagreen;
+}
