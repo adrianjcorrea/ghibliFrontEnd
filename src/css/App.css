@@ -5,6 +5,18 @@ body {
   background-size: cover;
 }
 
+.image {
+  position: absolute;
+  background: url('https://vignette.wikia.nocookie.net/greenyphatom/images/c/ca/1280px-Studio_Ghibli_logo.svg.png/revision/latest?cb=20171006225619');
+  background-position: center; /*когда у section-a : display: flex;
+  justify-content: center, то картинка уходит вправо, когда убираю position: absolute, то центрируется */
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 350px;
+  z-index: -1;
+}
+
 .pageTitle{
   text-align: center;
   font-family: 'Indie Flower', cursive;

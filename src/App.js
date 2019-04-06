@@ -4,9 +4,8 @@
 
     render() {
     return (
-       <div>
+       <div className='image'>
 
-           <h1 className='pageTitle'>Ghibli Films</h1>
        </div>
     );
    }
