@@ -22,14 +22,45 @@ class Card extends React.Component{
 
   }
 
+  viewCardChange = () => {
+    const {title, id, description, director, producer, release_date, rt_score} = this.props;
+    if(this.state.isClicked === false){
+      return(
+        <div>
+          <h2>{id}</h2>
+          <h2>{title}</h2>
+          <p>
+          Click Image to se Description
+          </p>
+        </div>
+    )
+    }else if(this.state.isClicked === true){
+      return (
+         <div>
+           <p>{description}</p>
+           <p>{director}</p>
+           <p>{producer}</p>
+           <p>{release_date}</p>
+           <p>{rt_score}</p>
+           <p>
+           Click Image to se Description
+           </p>
+        </div>
+    )
+   }
+  }
+
+
+
+
+
   render(){
     console.log(this.coverUrl)
-    const {title, id, description, director, producer, release_date, rt_score} = this.props
+    const {title} = this.props
 
   return (
 
-    <div  onClick={this.cardOnChange} className=' bg-blue dib br5 pa3 ma2 grow bw2 shadow-5 o-90 ba bw3 b--light-green pointer'
-    style={{width: '60%', height: '20%'}}>
+    <div  onClick={this.cardOnChange} className=' bg-blue dib br5 pa3 ma2 grow bw2 shadow-5 o-90 ba bw3 b--light-green pointer' style={{width: '60%', height: '20%'}}>
     {title === 'Castle in the Sky' ?
       <img src={coverImage[0]} alt="Film Cover"style={{width: '10%', height: '10%'}} />
      :(title === 'Grave of the Fireflies') ?
@@ -70,20 +101,10 @@ class Card extends React.Component{
         <img src={coverImage[18]} alt="Film Cover"style={{width: '10%', height: '10%'}} />
      :
         <img src={coverImage[19]} alt="Film Cover"style={{width: '10%', height: '10%'}} />
-      }
-    <div>
-        <h2>{id}</h2>
-        <h2>{title}</h2>
-        <p>{description}</p>
-        <p>{director}</p>
-        <p>{producer}</p>
-        <p>{release_date}</p>
-        <p>{rt_score}</p>
-        <button >
-        Click Image to se Description
-        </button>
-      </div>
+    }
+      {this.viewCardChange()}
     </div>
+
   );
  }
 }
