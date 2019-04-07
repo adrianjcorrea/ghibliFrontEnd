@@ -4,6 +4,7 @@ import './css/App.css';
 import 'tachyons';
 import App from './App';
 import Routes from './components/navigation/Routes.jsx';
+import AutoComplete from './components/utilities/AutoComplete.jsx';
 
 
-ReactDOM.render(<Routes/>, document.getElementById('root'));
+ReactDOM.render(<AutoComplete />, document.getElementById('root'));
