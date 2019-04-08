@@ -2,6 +2,8 @@ import React from 'react';
 import FilmsList from './FilmsList.jsx';
 import SearchBox from '../utilities/SearchBox.jsx';
 import Scroll from '../utilities/Scroll.jsx';
+import Autocomplete from  'react-autocomplete';
+import { matchFilms, getFilms }from '../utilities/Data.js';
 
 class Films extends React.Component{
   constructor(){
