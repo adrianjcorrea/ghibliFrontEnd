@@ -58,7 +58,7 @@ class Card extends React.Component{
 
   return (
 
-    <div  onClick={this.cardOnChange} className=' bg-blue dib br5 pa3 ma2 grow bw2 shadow-5 o-90 ba bw3 b--light-green pointer' style={{width: '60%', height: '20%'}}>
+    <div  onClick={this.cardOnChange} className='tc bg-blue dib br5 pa3 ma2 grow bw2 shadow-5 o-90 ba bw3 b--light-green pointer' style={{width: '60%', height: '20%'}}>
     {title === 'Castle in the Sky' ?
       <img src={coverImage[0]} alt="Film Cover"style={{width: '10%', height: '10%'}} />
      :(title === 'Grave of the Fireflies') ?

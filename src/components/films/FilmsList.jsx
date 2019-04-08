@@ -2,7 +2,7 @@
 import React from 'react';
 import Card from './Card';
 
-const FilmsList = ({ films }) => {
+const FilmsList = ({ films, autoComplete }) => {
   return (
     <div>
       {
