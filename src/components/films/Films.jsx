@@ -33,9 +33,9 @@ class Films extends React.Component{
 
     return (
       <Autocomplete
+      className="autoComplete"
          value={ searchfield }
          inputProps={{ id: 'states-autocomplete' }}
-         wrapperStyle={{ position: 'relative', display: 'inline-block' }}
          items={ getFilms() }
          getItemValue={ item => item.name }
          shouldItemRender={ matchFilms }
@@ -73,11 +73,10 @@ class Films extends React.Component{
 
     (
        <div>
-         <div className="tr ma1">
->
+         <div className="fr  ma1 ">
           {this.autoComplete()}
          </div>
-         <h1 className='pageTitle'>Ghibli Films</h1>
+         <h1 className='pageTitle fc w-100'>Ghibli Films</h1>
            <Scroll >
              <FilmsList films={filteredFilms} autoComplete={this.autoComplete()} />
            </Scroll>
