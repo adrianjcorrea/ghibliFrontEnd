@@ -14,10 +14,8 @@ class Card extends React.Component{
      const click = this.state.isClicked;
      if(click === false){
        this.setState({isClicked: true})
-       console.log(this.state.isClicked)
      }else{
        this.setState({isClicked: false})
-       console.log(this.state.isClicked)
      }
 
   }
@@ -55,8 +53,8 @@ class Card extends React.Component{
 
 
   render(){
-    console.log(this.coverUrl)
     const {title} = this.props
+    console.log(title)
 
   return (
 
