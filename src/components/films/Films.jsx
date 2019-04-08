@@ -31,7 +31,7 @@ class Films extends React.Component{
 
   render() {
     //Destructuring to use state.
-    const { films } = this.state;
+    const { films, searchfield } = this.state;
     //const imageid = ImageLink.filter
     const filteredFilms = films.filter(film => {
       //Will search by title name.
@@ -41,14 +41,34 @@ class Films extends React.Component{
     //While films load will display Loading.
     //When films are captured in state then will display app compontets.
     return !films.length ?
-    <h1 className='loading'>LOadING...</h1> :
-
+      <h1 className='loading'>LOadING...</h1> :
     (
        <div className='tc'>
          <h1 className='pageTitle'>Ghibli Films</h1>
-           <SearchBox searchChange={this.onSearchChange} />
+           <Autocomplete
+              value={ searchfield }
+              inputProps={{ id: 'states-autocomplete' }}
+              wrapperStyle={{ position: 'relative', display: 'inline-block' }}
+              items={ getFilms() }
+              getItemValue={ item => item.name }
+              shouldItemRender={ matchFilms }
+              onChange={(event, searchfield ) => this.setState({ searchfield }) }
+              onSelect={ searchfield => this.setState({ searchfield }) }
+              renderMenu={ children => (
+                <div className = "menu">
+                  { children }
+                </div>
+              )}
+              renderItem={ (item, isHighlighted) => (
+                <div
+                  className={`item ${isHighlighted ? 'item-highlighted' : ''}`}
+                  key={ item.abbr } >
+                  { item.name }
+                </div>
+              )}
+           />
            <Scroll >
-             <FilmsList films={filteredFilms} />
+             <FilmsList films={filteredFilms} searchfield={this.state.searchfield} />
            </Scroll>
        </div>
      );
