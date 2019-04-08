@@ -1,6 +1,5 @@
 import React from 'react';
 import FilmsList from './FilmsList.jsx';
-import SearchBox from '../utilities/SearchBox.jsx';
 import Scroll from '../utilities/Scroll.jsx';
 import Autocomplete from  'react-autocomplete';
 import { matchFilms, getFilms }from '../utilities/Data.js';
@@ -60,7 +59,7 @@ class Films extends React.Component{
 
   render() {
     //Destructuring to use state.
-    const { films, searchfield } = this.state;
+    const { films } = this.state;
     //const imageid = ImageLink.filter
     const filteredFilms = films.filter(film => {
       //Will search by title name.
@@ -74,7 +73,7 @@ class Films extends React.Component{
 
     (
        <div>
-         <div className="tr ma1"
+         <div className="tr ma1">
 >
           {this.autoComplete()}
          </div>

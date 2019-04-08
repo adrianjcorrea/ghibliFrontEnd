@@ -181,3 +181,21 @@ iframe {
   color:black;
   text-align: center;
 }
+
+
+#Scroll {
+  display: inline-block;
+  border: 1px solid black;
+  height: 31.5em;
+  overflow-y: scroll;
+}
+
+@media(min-height: 500px) and (max-height: 600px){
+  #Scroll {
+      display: inline-block;
+      border: 1px solid black;
+      height: 29em;
+      overflow-y: scroll;
+    }
+
+  }
