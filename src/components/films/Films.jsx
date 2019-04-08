@@ -74,7 +74,8 @@ class Films extends React.Component{
 
     (
        <div>
-         <div className="tr">
+         <div className="tr ma1"
+>
           {this.autoComplete()}
          </div>
          <h1 className='pageTitle'>Ghibli Films</h1>
