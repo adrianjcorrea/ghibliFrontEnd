@@ -26,7 +26,7 @@ code {
 .card1:hover {
   display: inline-block;
   cursor: pointer;
-  background-color: rgba(8, 152, 213, 0.8);
+  transform: scale(1.05);
   border: solid lightseagreen;
   text-transform: none;
 
@@ -83,6 +83,17 @@ code {
   text-align: center;
   font-family: 'Indie Flower', cursive;
   font-size: 5rem;
+}
+
+#navBar {
+  text-align: right;
+  margin-top: 2rem;
+}
+
+#navLink {
+  padding:1rem;
+  margin:.75rem;
+  background-color: white;
 }
 
 /*Section A*/
