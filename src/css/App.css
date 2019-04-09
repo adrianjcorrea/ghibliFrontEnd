@@ -57,6 +57,13 @@ code {
   font-weight: bold;
 }
 
+.autocomplete {
+  display: inline;
+  margin-top: -10px;
+  float: right;
+  margin-right: 0.5rem;
+}
+
 
 
 .image {
@@ -76,7 +83,19 @@ code {
   font-family: 'Indie Flower', cursive;
   text-transform: uppercase;
   font-size: 2.5rem;
-  margin-bottom: 0px;
+  margin-bottom: 25px;
+}
+
+.search-header {
+  font-size: 15px;
+}
+
+#states-autocomplete {
+  padding: 0.5rem;
+  border: 0.5rem green;
+  border-radius: 1.5rem;
+  background-color: white;
+
 }
 
 .loading {
@@ -214,14 +233,25 @@ iframe {
 
 
 #Scroll {
-  border: 1px solid black;
+  border: 2px solid black;
   height: 34.5em;
   overflow-y: scroll;
-  overflow-x:hidden;
+  overflow-x:scroll;
 }
 
 @media(max-width: 533px){
   #states-autocomplete{
     width:8em;
+   }
+ }
+
+@media(max-width: 1100px){
+  .card1:hover {
+    display: inline-block;
+    cursor: pointer;
+    transform: none;
+    border: solid black;
+    text-transform: none;
+
    }
   }
