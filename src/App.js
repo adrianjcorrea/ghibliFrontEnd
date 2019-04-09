@@ -57,7 +57,7 @@
                     <h3 className="card-title">Ghibli Museum</h3>
                     <div className="card-imgwrap"></div>
                     <p>Open the door and welcome to wonderland! Every window and lamp is lovingly hand-crafted with beautiful and colorful stained glass using Ghibli characters, pretty plants and flowers, and forest animals. When the sun is shining, the vivid colors of the glass are reflected in splashes of colored light on the stone floors.</p>
-                    <a href="http://www.ghibli-museum.jp/en/info" target="_blank">Ghibli Studios website.</a>
+                    <a href="http://www.ghibli-museum.jp/en/info" target="_blank">Ghibli Studios Museum website.</a>
                   </div>
                 </div>
               </li>
@@ -65,7 +65,7 @@
           </section>
           <section id="section-d" className="grid">
             <div className='content'>
-              <h3 className='tc bg-white'>Studio Ghiblis top 10 movies</h3>
+              <h3 className='iframe-header'>Studio Ghiblis top 10 movies</h3>
               <div className="iframe-cont">
                 <iframe src="https://www.youtube.com/embed/xJWLxxD0Hp8" frameborder="0" allow="autoplay; encrypted-media"
                   allowfullscreen></iframe>

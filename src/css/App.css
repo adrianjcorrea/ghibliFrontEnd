@@ -64,7 +64,11 @@ code {
   margin-right: 0.5rem;
 }
 
-
+.directive {
+  display: inline;
+  float: center;
+  background-color: silver;
+}
 
 .image {
   position: absolute;
@@ -135,8 +139,13 @@ code {
   color: white;
 }
 
-.sitelink a {
+.sitelink {
+  float: center;
   color: white;
+}
+.sitelink a{
+margin-left: 5px;
+color: black;
 }
 
 .sitelink a:hover {
@@ -146,6 +155,8 @@ code {
 
 #section-b{
   background-color: rgb(45, 125, 149);
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 
@@ -170,10 +181,10 @@ code {
 }
 
 
-.section-c {
+#section-c {
   margin-bottom: 1em;
-  background: #fff;
-  color: #333;
+  text-align: center;
+
  }
 
  #section-c ul {
@@ -205,6 +216,11 @@ code {
 
 #section-c li {
   width: 30%;
+}
+
+.iframe-header {
+  text-align: center;
+  background-color: white;
 }
 
 

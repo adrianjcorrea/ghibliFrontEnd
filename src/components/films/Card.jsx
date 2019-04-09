@@ -27,8 +27,8 @@ class Card extends React.Component{
         <div>
           <h2>{id}</h2>
           <h2>{title}</h2>
-          <p>
-          Click Image to flip and see description
+          <p className="directive">
+          Click card to flip and see description
           </p>
         </div>
     )
@@ -40,8 +40,8 @@ class Card extends React.Component{
            <p>{producer}</p>
            <p>{release_date}</p>
            <p>{rt_score}</p>
-           <p>
-           Click Image to flip back
+           <p className="directive">
+           Click card to flip back
            </p>
         </div>
     )
