@@ -8,13 +8,13 @@
 
 ## architecture
 
--[ReactBoilerplate].(https://github.com/facebook/create-react-app), used to set up react.
+-[ReactBoilerplate](https://github.com/facebook/create-react-app), used to set up react.
 
--[ReactAutocomplete].(https://github.com/reactjs/react-autocomplete), for   easier movie searching.
+-[ReactAutocomplete](https://github.com/reactjs/react-autocomplete), for   easier movie searching.
 
--[React-Router-Dom].(https://reacttraining.com/react-router/web/guides/quick-start), to link between Home and  Films.
+-[React-Router-Dom](https://reacttraining.com/react-router/web/guides/quick-start), to link between Home and  Films.
 
--[Tachyons].(https://tachyons.io/), initially used for styling, then transferred to pure css
+-[Tachyons](https://tachyons.io/), initially used for styling, then transferred to pure css
 
 
 ## Installation Steps
@@ -31,7 +31,7 @@
 
 ## Heroku link
 
-[Ghibli].(https://evening-eyrie-46737.herokuapp.com/), Deployed on Heroku
+[Ghibli](https://evening-eyrie-46737.herokuapp.com/), Deployed on Heroku
 
 
 
