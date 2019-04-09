@@ -8,16 +8,29 @@ body {
 
 /*Section A*/
 #section-a {
+  margin-top: 80px;
   min-height: 450px;
   color:#fff;
   text-align: center;
-
 }
 
 #img-caption {
   margin-top: auto;
   font-size: 1.75em;
 
+}
+
+@media(max-width: 700px){
+
+  #section-a {
+    margin-top: 150px;
+
+  }
+
+  #img-caption {
+    margin-top: 80px;
+
+  }
 }
 
 .pageTitle{
@@ -32,7 +45,6 @@ body {
 #section-b{
   background-color: rgb(45, 125, 149);
   text-align: center;
-  margin-bottom: 2rem;
 }
 
 #tribute-info {
