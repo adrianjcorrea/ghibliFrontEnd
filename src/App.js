@@ -8,9 +8,9 @@
       <div>
         <main className="grid" id="main">
           <section id="section-a">
-            <h1 classNameName="pageTitle">Welcome to Ghibli</h1>
+            <h1 classNameName="pageTitle">Welcome to Studio Ghibli</h1>
             <div className="image"></div>
-            <div id="img-caption"> Totoro, a character from My Neighbor Totoro, is the studios mascot.</div>
+            <div id="img-caption"> Totoro, Ghibli studios mascot.</div>
           </section>
           <section id="section-b" >
             <div >
@@ -30,7 +30,7 @@
               <li>
                 <div className="card">
                   <div className="card-content">
-                    <h3 className="card-title">History</h3>
+                    <h3 className="card-title">Ghibli History</h3>
                     <div className="card-imgwrap"></div>
                     <p>Studio Ghibli was founded in 1985 in Tokyo by the three men, Isao Takahata, Toshio Suzuki and the well-known film producer Hayao Miyazaki. The name Studio Ghibli was based on the Arabic name for "hot sahara wind" because the founders wanted Studio Ghibli to blow new wind through the anime industry.</p>
                   </div>
@@ -39,10 +39,14 @@
               <li>
                 <div className="card">
                   <div className="card-content">
-                    <h3 className="card-title">Movies</h3>
+                    <h3 className="card-title">Pre Ghibli Films</h3>
                     <div className="card-imgwrap"></div>
-                    <p>Go to Movies Listed </p>
-                    <NavLink to="Films">Films</NavLink>
+                      <p>Prince of the Sun The Little Norse Prince (1968)</p>
+                      <p>The Flying Phantom Ship (1969)</p>
+                      <p>The Castle of Cagliostro (1979)</p>
+                      <p>Panda! Go Panda! (1972)</p>
+                      <p>Future Boy Conan (1978)</p>
+                      <p>Nausicaä of the Valley of the Wind (1984)</p>
                   </div>
                 </div>
 
@@ -50,10 +54,10 @@
               <li>
                 <div className="card">
                   <div className="card-content">
-                    <h3 className="card-title">Museum</h3>
+                    <h3 className="card-title">Ghibli Museum</h3>
                     <div className="card-imgwrap"></div>
+                    <p>Open the door and welcome to wonderland! Every window and lamp is lovingly hand-crafted with beautiful and colorful stained glass using Ghibli characters, pretty plants and flowers, and forest animals. When the sun is shining, the vivid colors of the glass are reflected in splashes of colored light on the stone floors.</p>
                     <a href="http://www.ghibli-museum.jp/en/info" target="_blank">Ghibli Studios website.</a>
-                    <p></p>
                   </div>
                 </div>
               </li>

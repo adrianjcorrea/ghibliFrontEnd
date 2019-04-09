@@ -47,7 +47,7 @@ code {
 
 .image {
   position: absolute;
-  background: url('https://vignette.wikia.nocookie.net/greenyphatom/images/c/ca/1280px-Studio_Ghibli_logo.svg.png/revision/latest?cb=20171006225619');
+  background: url('https://unixtitan.net/images/drawing-running-miyazaki-6.png');
   background-position: center; /*когда у section-a : display: flex;
   justify-content: center, то картинка уходит вправо, когда убираю position: absolute, то центрируется */
   background-repeat: no-repeat;

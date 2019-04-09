@@ -33,7 +33,6 @@ class Films extends React.Component{
 
     return (
       <Autocomplete
-      className="autoComplete"
          value={ searchfield }
          inputProps={{ id: 'states-autocomplete' }}
          items={ getFilms() }
