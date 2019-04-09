@@ -1,5 +1,5 @@
   import React, { Component } from 'react';
-  import coverImage from './components/utilities/ImageLink.js';
+  import {imageSet} from './components/utilities/Data.js';
 
 
   class App extends Component {
@@ -10,13 +10,13 @@
         <main className="grid" id="main">
           <section id="section-a">
             <h1 classNameName="pageTitle">Welcome to Studio Ghibli</h1>
-            {coverImage.map((e,i)=>
-              <img src={coverImage[i].photo}
+            {imageSet.map((e,i)=>
+              <img src={imageSet[i].photo}
               alt="Film Cover"
               style={{width: '10%', height: '10%'}}
              />
            )}
-            <div id="img-caption"> Totoro, Ghibli studios mascot.</div>
+            <div id="img-caption">Ghibli studios Films.</div>
           </section>
           <section id="section-b" >
             <div >
@@ -55,7 +55,6 @@
                       <p>Nausicaä of the Valley of the Wind (1984)</p>
                   </div>
                 </div>
-
               </li>
               <li>
                 <div className="card">
@@ -85,7 +84,7 @@
         <footer id="main-footer">
    <p>Copyright © 2018 Ghiblis Fan</p>
  </footer>
-      </div>
+</div>
     );
    }
   }

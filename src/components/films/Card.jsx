@@ -54,8 +54,6 @@ class Card extends React.Component{
 
   render(){
     const {title} = this.props
-    console.log(title)
-
   return (
 
     <div  onClick={this.cardOnChange} className='card1' style={{width: '70%', height: '20%'}}>
