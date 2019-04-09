@@ -12,10 +12,26 @@ code {
   background-color: rgba(0,0,0,0.04);
   border-radius: 3px;
 }
-.autoComplete{
-  margin-right: 2rem;
+.card1{
+  text-align: center;
+  background-color: rgb(8, 152, 213);
+  display: inline-block;
+  border-radius: 1rem;
+  padding: 3em;
+  margin: 1em;
+  border-width: .5rem;
+  border: solid lightseagreen;
+}
+
+.card1:hover {
+  display: inline-block;
+  cursor: pointer;
+  background-color: rgba(8, 152, 213, 0.8);
+  border: solid lightseagreen;
+  text-transform: none;
 
 }
+
 
 .menu {
   position: absolute;
@@ -41,9 +57,7 @@ code {
   font-weight: bold;
 }
 
-#states-autocomplete{
-  width:9em;
-}
+
 
 .image {
   position: absolute;
@@ -190,18 +204,13 @@ iframe {
 
 #Scroll {
   border: 1px solid black;
-  height: 31.5em;
+  height: 34.5em;
   overflow-y: scroll;
   overflow-x:hidden;
 }
 
-@media(min-height: 500px) and (max-height: 600px){
-  #Scroll {
-      border: 1px solid black;
-      height: 29em;
-      overflow-y: scroll;
-      overflow-x:hidden;
-
-    }
-
+@media(max-width: 533px){
+  #states-autocomplete{
+    width:8em;
+   }
   }
