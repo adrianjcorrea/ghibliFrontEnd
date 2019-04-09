@@ -1,4 +1,6 @@
+//Defining link button.
 import React from 'react';
+//imported react-router-dom properties from library.
 import {NavLink} from 'react-router-dom';
 
 const NavBar = () => {

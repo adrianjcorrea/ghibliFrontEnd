@@ -9,7 +9,8 @@ class Card extends React.Component{
        isClicked: false
      }
   }
-
+//Function will allow to see film information when true.
+//When false we will see image and name.
    cardOnChange = () => {
      const click = this.state.isClicked;
      if(click === false){
@@ -20,6 +21,7 @@ class Card extends React.Component{
 
   }
 
+//Defines what will be displayed on card information or cover and title.
   viewCardChange = () => {
     const {title, id, description, director, producer, release_date, rt_score} = this.props;
     if(this.state.isClicked === false){
@@ -48,10 +50,8 @@ class Card extends React.Component{
    }
   }
 
-
-
-
-
+  //Images didnt display correctly when I did auto complete .
+  //so I used conditional statements.
   render(){
     const {title} = this.props
   return (

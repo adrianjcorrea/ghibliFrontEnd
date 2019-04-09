@@ -27,7 +27,7 @@
               </p>
               <span className="sitelink" id="tribute-link">
                 Visit
-                <a href="http://www.ghibli.jp/" target="_blank">Ghibli Studios website.</a>
+                <a href="http://www.ghibli.jp/" target="_blank" rel="noopener noreferrer">Ghibli Studios website.</a>
               </span>
             </div>
           </section>

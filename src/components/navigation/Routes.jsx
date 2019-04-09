@@ -1,4 +1,6 @@
+//Defining routes component.
 import React, { Component } from 'react';
+//imported react-router-dom properties from library.
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import App from'../../App.js';

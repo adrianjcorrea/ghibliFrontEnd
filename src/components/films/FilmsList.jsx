@@ -1,11 +1,10 @@
-
+//Importin card to define how content wil
 import React from 'react';
 import Card from './Card';
-import coverImage from '../utilities/ImageLink.js';
 
-
+//Mapping films to get properties and values.
 const FilmsList = ({ films }) => {
-  console.log(films)
+  //Card defines what will be displayed in card.
   return (
     <div>
       {
@@ -13,7 +12,6 @@ const FilmsList = ({ films }) => {
           return (
               <Card
               key={i}
-              image={coverImage[i].photo}
               title={films[i].title}
               description={films[i].description}
               director={films[i].director}
@@ -28,6 +26,5 @@ const FilmsList = ({ films }) => {
     </div>
   );
 }
-
 
 export default FilmsList;

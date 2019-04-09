@@ -1,3 +1,4 @@
+//This array defines the cover images in cards.
 const coverImage = [
 {photo:'https://images-na.ssl-images-amazon.com/images/I/71HLiMMNe-L.jpg',},
 {photo:'http://www.movienewsletters.net/photos/072500R1.jpg',},

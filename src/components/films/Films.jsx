@@ -1,3 +1,4 @@
+//IMPORTING used components and libraries.
 import React from 'react';
 import FilmsList from './FilmsList.jsx';
 import Scroll from '../utilities/Scroll.jsx';
@@ -24,10 +25,7 @@ class Films extends React.Component{
     .then(response => { this.setState({films: response})});
   }
 
-  onSearchChange = (event) => {
-    this.setState({searchfield: event.target.value})
-  }
-
+//autoComplete functinality
   autoComplete = () => {
     const { searchfield } = this.state;
 

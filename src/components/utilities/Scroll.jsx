@@ -1,3 +1,4 @@
+//Scroll component
 import React from 'react';
 
 const Scroll = (props) => {

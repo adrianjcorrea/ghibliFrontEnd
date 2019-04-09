@@ -1,3 +1,4 @@
+//Defining function to use in auto complete.
 export function getFilms(){
 return [
  {abbr:"CitS", name:"Castle in the Sky"},
@@ -22,6 +23,7 @@ return [
 ]
 }
 
+//This function lets user search by name and abreviation.
 export function matchFilms(state, value) {
   return (
     state.name.toLowerCase().indexOf(value.toLowerCase()) !== -1 ||
