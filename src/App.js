@@ -1,5 +1,6 @@
   import React, { Component } from 'react';
-  import {NavLink} from 'react-router-dom';
+  import coverImage from './components/utilities/ImageLink.js';
+
 
   class App extends Component {
 
@@ -9,7 +10,12 @@
         <main className="grid" id="main">
           <section id="section-a">
             <h1 classNameName="pageTitle">Welcome to Studio Ghibli</h1>
-            <div className="image"></div>
+            {coverImage.map((e,i)=>
+              <img src={coverImage[i].photo}
+              alt="Film Cover"
+              style={{width: '10%', height: '10%'}}
+             />
+           )}
             <div id="img-caption"> Totoro, Ghibli studios mascot.</div>
           </section>
           <section id="section-b" >
@@ -57,7 +63,7 @@
                     <h3 className="card-title">Ghibli Museum</h3>
                     <div className="card-imgwrap"></div>
                     <p>Open the door and welcome to wonderland! Every window and lamp is lovingly hand-crafted with beautiful and colorful stained glass using Ghibli characters, pretty plants and flowers, and forest animals. When the sun is shining, the vivid colors of the glass are reflected in splashes of colored light on the stone floors.</p>
-                    <a href="http://www.ghibli-museum.jp/en/info" target="_blank">Ghibli Studios Museum website.</a>
+                    <a href="http://www.ghibli-museum.jp/en/info" target="_blank" rel="noopener noreferrer" >Ghibli Studios Museum website.</a>
                   </div>
                 </div>
               </li>
@@ -67,8 +73,11 @@
             <div className='content'>
               <h3 className='iframe-header'>Studio Ghiblis top 10 movies</h3>
               <div className="iframe-cont">
-                <iframe src="https://www.youtube.com/embed/xJWLxxD0Hp8" frameborder="0" allow="autoplay; encrypted-media"
-                  allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/xJWLxxD0Hp8"
+                  title="ghibliTopTen"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen></iframe>
               </div>
             </div>
           </section>
