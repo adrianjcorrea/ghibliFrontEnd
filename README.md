@@ -1,6 +1,6 @@
 # ghibliFrontEnd
 
- using [GhibliStudioApi].(https://ghibliapi.herokuapp.com/), created a simple web app that lists all Ghibli studios movies plus more information on Ghibli Studio including YouTube video.
+ using [GhibliStudioApi](https://ghibliapi.herokuapp.com/), created a simple web app that lists all Ghibli studios movies plus more information on Ghibli Studio including YouTube video.
 
  Also lets user search for a certain movie by title or title initials.
 
@@ -31,7 +31,7 @@
 
 ## Heroku link
 
-[Ghibli](https://evening-eyrie-46737.herokuapp.com/), Deployed on Heroku
+[GhibliStudioFrontEndApp](https://evening-eyrie-46737.herokuapp.com/), Deployed on Heroku
 
 
 
