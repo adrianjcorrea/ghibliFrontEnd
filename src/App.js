@@ -17,6 +17,7 @@
              />
            )}
             <div id="img-caption">Ghibli studios Films.</div>
+            <img id="imgHide"src="https://newvitruvian.com/images/ghibli-transparent-black-4.png" alt="totoro" style={{width: '15%', height: '15%'}} />
           </section>
           <section id="section-b" >
             <div >

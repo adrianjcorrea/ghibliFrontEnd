@@ -29,6 +29,10 @@ body {
   margin-bottom: 25px;
 }
 
+#imgHide {
+  display: none;
+}
+
 /*Section-B*/
 #section-b{
   background-color: rgb(45, 125, 149);
@@ -277,4 +281,10 @@ iframe {
       margin-top: 1rem;
       width: 90%;
     }
+    #imgHide {
+      display: inline;
+      float: center;
+      margin: 1rem;
+    }
+
   }
