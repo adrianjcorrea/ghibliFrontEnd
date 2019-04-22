@@ -1,21 +1,19 @@
-  import React, { Component } from 'react';
-  import {imageSet} from './components/utilities/Data.js';
+import React, { Component } from 'react';
+import {imageSet} from './components/utilities/Data.js';
 
-
-  class App extends Component {
-
-    render() {
+class App extends Component {
+  render() {
     return (
       <div>
         <main className="grid" id="main">
           <section id="section-a">
             <h1 classNameName="pageTitle">Welcome to Studio Ghibli</h1>
-            {imageSet.map((e,i)=>
-              <img src={imageSet[i].photo}
-              alt="Film Cover"
-              style={{width: '10%', height: '10%'}}
-             />
-           )}
+              {imageSet.map((e,i)=>
+                <img src={imageSet[i].photo}
+                  alt="Film Cover"
+                  style={{width: '10%', height: '10%'}}
+                />
+              )}
             <div id="img-caption">Ghibli studios Films.</div>
             <img id="imgHide"src="https://newvitruvian.com/images/ghibli-transparent-black-4.png" alt="totoro" style={{width: '15%', height: '15%'}} />
           </section>
@@ -68,7 +66,7 @@
           </section>
           <section id="section-d" className="grid">
             <div className='content'>
-              <h3 className='iframe-header'>Studio Ghiblis top 10 movies</h3>
+                <h3 className='iframe-header'>Studio Ghiblis top 10 movies</h3>
               <div className="iframe-cont">
                 <iframe src="https://www.youtube.com/embed/xJWLxxD0Hp8"
                   title="ghibliTopTen"
@@ -80,11 +78,11 @@
           </section>
         </main>
         <footer id="main-footer">
-   <p>Copyright © 2018 Ghiblis Fan</p>
- </footer>
-</div>
-    );
-   }
+          <p>Copyright © 2018 Ghiblis Fan</p>
+        </footer>
+      </div>
+      );
+    }
   }
 
   export default App;

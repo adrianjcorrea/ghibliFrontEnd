@@ -10,16 +10,15 @@ const FilmsList = ({ films }) => {
       {
         films.map((cards, i) => {
           return (
-              <Card
+            <Card
               key={i}
               title={films[i].title}
               description={films[i].description}
               director={films[i].director}
               producer={films[i].producer}
-              release_date={films[i].release_date}
-              rt_score={films[i].rt_score}
-
-              />
+              releaseDate={films[i].release_date}
+              rtScore={films[i].rt_score}
+            />
           );
         })
       }
