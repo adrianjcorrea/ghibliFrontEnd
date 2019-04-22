@@ -7,9 +7,10 @@ class App extends Component {
       <div>
         <main className="grid" id="main">
           <section id="section-a">
-            <h1 classNameName="pageTitle">Welcome to Studio Ghibli</h1>
+            <h1 className="pageTitle">Welcome to Studio Ghibli</h1>
               {imageSet.map((e,i)=>
                 <img src={imageSet[i].photo}
+                  key={i}
                   alt="Film Cover"
                   style={{width: '10%', height: '10%'}}
                 />
@@ -70,7 +71,7 @@ class App extends Component {
               <div className="iframe-cont">
                 <iframe src="https://www.youtube.com/embed/xJWLxxD0Hp8"
                   title="ghibliTopTen"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="autoplay; encrypted-media"
                   allowFullScreen></iframe>
               </div>
