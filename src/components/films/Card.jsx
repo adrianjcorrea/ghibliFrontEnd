@@ -25,8 +25,7 @@ class Card extends React.Component{
     const {title, id, description, director, producer, releaseDate, rtScore} = this.props;
       if(this.state.isClicked === false){
         return(
-          <div>
-            <h2>{id}</h2>
+          <div className="card">
             <h2>{title}</h2>
             <p className="directive">
             Click card to flip and see description
@@ -35,8 +34,8 @@ class Card extends React.Component{
         );
     } else if (this.state.isClicked === true) {
       return (
-        <div>
-          <p>{description}</p>
+       <div className="card">
+         <p>{description}</p>
           <p>{director}</p>
           <p>{producer}</p>
           <p>{releaseDate}</p>
